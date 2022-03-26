@@ -1,0 +1,150 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #222222;
+  box-sizing: border-box;
+}
+
+/* Header Start */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+      to top,
+      rgb(34, 34, 34),
+      rgba(255, 255, 255, 0)
+    ),
+    url(/img/marvel2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+}
+#logo {
+  margin-top: 250px;
+  background: transparent;
+}
+#marvelLogo {
+  width: 350px;
+  background: transparent;
+}
+/* Header Finish */
+
+/* Container and Cards Start */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 250px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.allCard {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+}
+.card {
+  display: flex;
+  align-items: center;
+  width: 252px;
+  height: 369px;
+  border: 1px solid #ffffff90;
+  margin-bottom: 105px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.card-image {
+  border-top: 1px solid #ffffff90;
+  padding-top: 10px;
+  margin-top: -50px;
+}
+.card-title {
+  height: 10px;
+  color: #ffffff;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 15px;
+}
+/* Container and Cards Finish */
+
+/* Pagination Start */
+.paginationBox {
+  display: flex;
+  font-size: 15px;
+  color: #7e7e7e;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 210px;
+}
+.pagination a {
+  color: #7e7e7e;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+.pagination a.active {
+  background-color: #7e7e7e;
+  color: black;
+  border-radius: 35px;
+}
+.pagination a:hover:not(.active) {
+  background-color: #5e5e5e;
+  border-radius: 35px;
+}
+/* Pagination Finish */
+
+/* Responsive Start */
+
+/* Phone */
+@media screen and (max-width: 768px) {
+  .container {
+    margin-top: 150px;
+  }
+  .allCard {
+    justify-content: space-around;
+  }
+  #marvelLogo {
+    width: 200px;
+  }
+  .paginationBox {
+    flex-direction: column;
+    align-items: center;
+    font-size: 11px;
+  }
+  .pagination {
+    display: flex;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+}
+
+/* Tablet */
+@media screen and (min-device-width: 768px) and (max-device-width: 1280px) {
+  .container {
+    margin-top: 150px;
+  }
+  .allCard {
+    justify-content: space-around;
+  }
+  #marvelLogo {
+    width: 250px;
+  }
+  .paginationBox {
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+  }
+  .pagination {
+    display: flex;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+}
+/* Responsive Finish */
